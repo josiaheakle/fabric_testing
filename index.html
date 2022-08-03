@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<title>Fabric Testing</title>
+	</head>
+	<body>
+		<div id="app">
+			<header id="header">
+				<ul id="header-btn-cntr">
+					<button id="new-shape-btn">Shape</button>
+					<button id="new-text-btn">Text</button>
+					<button id="new-img-btn">Image</button>
+				</ul>
+			</header>
+			<main>
+				<canvas id="canvas"></canvas>
+				<aside id="side-menu">
+					<article id="new-shape-opts">
+						<button id="new-square-btn">square</button>
+						<button id="new-circle-btn">circle</button>
+						<button id="new-triangle-btn">triangle</button>
+					</article>
+					<article id="new-text-opts" class="hidden">
+						<span>
+							<label for="new-text-input">text content</label>
+							<input type="text" id="new-text-input" />
+						</span>
+						<button type="submit" id="new-text-submit">create</button>
+					</article>
+					<article id="new-img-opts">
+						<span>
+							<label for="new-img-input">image</label>
+							<input type="file" id="new-img-input" accept="image/png, image/jpeg" />
+						</span>
+						<button type="submit" id="new-img-submit">create</button>
+					</article>
+					<article id="obj-inspect">
+						<!-- Allow object editing here -->
+						<pre id="obj-dump"></pre>
+					</article>
+				</aside>
+			</main>
+		</div>
+		<script type="module" src="src/main.js"></script>
+	</body>
+</html>

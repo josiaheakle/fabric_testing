@@ -1,0 +1,18 @@
+{
+	"name": "fabric_testing",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"vite": "^3.0.0"
+	},
+	"dependencies": {
+		"fabric": "^5.2.1",
+		"html-region-merge": "^1.0.0"
+	}
+}
